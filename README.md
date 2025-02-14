@@ -27,6 +27,8 @@ O design foi pensado para ser limpo, profissional e intuitivo. A paleta de cores
 
 ![pg](https://github.com/user-attachments/assets/855aa96a-5d8c-45c4-8450-5d370e4606a4)
 
+## 🎥 Assista ao vídeo Explicativo
+
 [Baixar vídeo](https://github.com/user-attachments/assets/6c9029ad-1a23-47dd-a191-d8e0879f992e)
 
 
