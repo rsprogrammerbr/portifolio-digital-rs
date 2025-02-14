@@ -44,14 +44,31 @@ document.addEventListener('DOMContentLoaded', function() {
 // const audio = new Audio('./assets/audioinicial.mp3');
 // audio.volume = 0.5;
 
+// let audio = new Audio('/assets/audioInicial.mp3'); // Substitua pelo caminho correto do seu arquivo de áudio
+// let isPlaying = false;
+// audio.volume = 0.5;
+
+// function toggleAudio() {
+//     if (isPlaying) {
+//         audio.pause();
+//         audio.currentTime = 0; // Reinicia o áudio
+//         document.getElementById('audioTrigger').innerText = '▶️ Play'; // Atualiza o texto do botão
+//     } else {
+//         audio.play().catch(error => {
+//             console.error('Erro ao tentar reproduzir o áudio:', error);
+//         });
+//         document.getElementById('audioTrigger').innerText = '⏸️ Pause'; // Atualiza o texto do botão
+//     }
+//     isPlaying = !isPlaying; // Alterna o estado de reprodução
+// }
+
 let audio = new Audio('/assets/audioInicial.mp3'); // Substitua pelo caminho correto do seu arquivo de áudio
 let isPlaying = false;
 audio.volume = 0.5;
 
 function toggleAudio() {
     if (isPlaying) {
-        audio.pause();
-        audio.currentTime = 0; // Reinicia o áudio
+        audio.pause(); // Pausa o áudio
         document.getElementById('audioTrigger').innerText = '▶️ Play'; // Atualiza o texto do botão
     } else {
         audio.play().catch(error => {
