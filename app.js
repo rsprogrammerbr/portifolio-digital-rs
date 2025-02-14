@@ -41,21 +41,42 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // Configuração do áudio
-const audio = new Audio('./assets/audioinicial.mp3');
+// const audio = new Audio('./assets/audioinicial.mp3');
+// audio.volume = 0.5;
+
+let audio = new Audio('./assets/audioinicial.mp3'); // Substitua pelo caminho correto do seu arquivo de áudio
+let isPlaying = false;
 audio.volume = 0.5;
 
-// Função para alternar entre play e pause
 function toggleAudio() {
-    const audioButton = document.getElementById('audioTrigger');
-    
-    if (audio.paused) {
-        audio.play().catch(error => console.log('Erro ao tocar áudio:', error));
-        audioButton.innerHTML = '⏸️ Pause';
-    } else {
+    if (isPlaying) {
         audio.pause();
-        audioButton.innerHTML = '▶️ Play';
+        audio.currentTime = 0; // Reinicia o áudio
+        document.getElementById('audioTrigger').innerText = '▶️ Play'; // Atualiza o texto do botão
+    } else {
+        audio.play().catch(error => {
+            console.error('Erro ao tentar reproduzir o áudio:', error);
+        });
+        document.getElementById('audioTrigger').innerText = '⏸️ Pause'; // Atualiza o texto do botão
     }
+    isPlaying = !isPlaying; // Alterna o estado de reprodução
 }
+
+// Função para alternar entre play e pause
+// function toggleAudio() {
+//     const audioButton = document.getElementById('audioTrigger');
+    
+//     if (audio.paused) {
+//         audio.play().catch(error => console.log('Erro ao tocar áudio:', error));
+//         audioButton.innerHTML = '⏸️ Pause';
+//     } else {
+//         audio.pause();
+//         audioButton.innerHTML = '▶️ Play';
+//     }
+// }
+
+
+
 
 // Configurar visibilidade do botão play
 document.addEventListener('DOMContentLoaded', function() {
