@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // const audio = new Audio('./assets/audioinicial.mp3');
 // audio.volume = 0.5;
 
-let audio = new Audio('./assets/audioinicial.mp3'); // Substitua pelo caminho correto do seu arquivo de áudio
+let audio = new Audio('/assets/audioInicial.mp3'); // Substitua pelo caminho correto do seu arquivo de áudio
 let isPlaying = false;
 audio.volume = 0.5;
 
