@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Portfólio Digital Rodrigo Silva</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="cabecalho">
+        <button id="audioTrigger" onclick="toggleAudio()">▶️ Play</button>
+        <nav class="cabecalho__menu">
+            <a class="cabecalho__menu__link" href="#home">Home</a>
+            <a class="cabecalho__menu__link" href="#sobre">Sobre mim</a>
+            <a class="cabecalho__menu__link" href="#projetos">Projetos</a>
+            <a class="cabecalho__menu__link" href="./assets/CurriculoRodrigoSilvaTI.pdf" download>Baixar Currículo</a>
+        </nav>
+    </header>
+
+    <!-- Seção Home -->
+    <section id="home" class="apresentacao section">
+        <div class="apresentacao__conteudo">
+            <h1 class="apresentacao__conteudo__titulo">Transformo ideias em experiências digitais que<strong class="titulo-destaque"> geram resultados!</strong></h1>
+            <div class="apresentacao__conteudo__texto-wrapper">
+                <p class="apresentacao__conteudo__texto">Olá! Sou Rodrigo Silva, um profissional de TI com uma trajetória consolidada em gestão, infraestrutura e segurança de sistemas. Minha experiência me proporcionou uma
+                    visão abrangente do mundo da tecnologia, desde o suporte técnico até a coordenação de projetos.
+                    Atualmente, estou me especializando em Desenvolvimento Fullstack com HTML, CSS e JavaScript para unir minha
+                    experiência em infraestrutura com o poder da criação de interfaces web.</p>
+            </div>
+            <div class="apresentacao__links">
+                <h2 class="apresentacao__links__subtitulo">Acesse minhas redes</h2>
+                <a class="apresentacao__links__navegacao" href="https://github.com/rsprogrammerbr">
+                    <img src="./assets/github.png">Github
+                </a>
+                <a class="apresentacao__links__navegacao" href="https://www.linkedin.com/in/rodrigo-silva-180538174/">
+                    <img src="./assets/linkedin.png">LinkedIn
+                </a>
+            </div>
+        </div>
+        <img class="apresentacao__imagem" src="./assets/ImagemRodrigo.png" alt="Foto do Rodrigo">
+    </section>
+
+    <!-- Seção Sobre -->
+    <section id="sobre" class="section sobre">
+        <div class="cyber-lines"></div>
+        <h2 class="section__titulo">Sobre mim</h2>
+        <div class="sobre__conteudo">
+            <div class="sobre__texto">
+                <div class="sobre__texto-wrapper">
+                    <p>Sou Rodrigo Silva, um profissional de TI detalhista e orientado a resultados, com uma paixão constante por aprender e evoluir. Minha formação em Análise e Desenvolvimento de Sistemas e a pós-graduação em Engenharia de Software com Métodos Ágeis me proporcionaram uma base sólida para enfrentar os desafios do mundo da tecnologia.</p>
+                </div>
+                <div class="sobre__texto-wrapper">
+                    <p>Com mais de 10 anos de experiência em diversas áreas de TI, incluindo gestão de infraestrutura, segurança de redes e suporte técnico, desenvolvi uma visão abrangente do setor. Sou hábil em diversas ferramentas e tecnologias, como Microsoft Office, SQL Server, Power BI, Java, HTML, CSS, JavaScript, e possuo experiência em ambientes multi-cloud (AWS, GCP, Azure, OCI).</p>
+                </div>
+                <div class="sobre__texto-wrapper">
+                    <p>Minha busca contínua por conhecimento me levou a me especializar em Desenvolvimento Fullstack com HTML, CSS e JavaScript, unindo minha experiência em infraestrutura com a criação de interfaces web modernas e responsivas. Acredito que essa combinação me permite oferecer soluções completas e inovadoras para meus clientes, desde o planejamento estratégico até a implementação e manutenção de sistemas.</p>
+                </div>
+                <div class="sobre__texto-wrapper">
+                    <p>Sou um profissional proativo, com pensamento crítico e facilidade em trabalhar em equipe. Busco constantemente aprimorar meus conhecimentos e habilidades para entregar o melhor resultado possível em cada projeto.</p>
+                </div>
+            </div>
+            <div class="sobre__skills">
+                <h3 class="skills__titulo">Minhas Habilidades</h3>
+                <div class="skills-grid">
+                    <div class="molecule-container">
+                        <div class="skill-atom react">
+                            <i class="fab fa-react"></i>
+                            <span class="atom-label">React.js</span>
+                        </div>
+                        <div class="skill-atom html">
+                            <i class="fab fa-html5"></i>
+                            <span class="atom-label">HTML5</span>
+                        </div>
+                        <div class="skill-atom css">
+                            <i class="fab fa-css3-alt"></i>
+                            <span class="atom-label">CSS3</span>
+                        </div>
+                        <div class="skill-atom js">
+                            <i class="fab fa-js"></i>
+                            <span class="atom-label">JavaScript</span>
+                        </div>
+                        <div class="skill-atom typescript">
+                            <svg class="typescript-icon" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M3,3H21V21H3V3M13.71,17.86C14.21,18.84 15.22,19.59 16.8,19.59C18.4,19.59 19.6,18.76 19.6,17.23C19.6,15.82 18.79,15.19 17.35,14.57L16.93,14.39C16.2,14.08 15.89,13.87 15.89,13.37C15.89,12.96 16.2,12.64 16.7,12.64C17.18,12.64 17.5,12.85 17.79,13.37L19.1,12.5C18.55,11.54 17.77,11.17 16.7,11.17C15.19,11.17 14.22,12.13 14.22,13.4C14.22,14.78 15.03,15.43 16.25,15.95L16.67,16.13C17.45,16.47 17.91,16.68 17.91,17.26C17.91,17.74 17.46,18.09 16.76,18.09C15.93,18.09 15.45,17.66 15.09,17.06L13.71,17.86M13,11.25H8V12.75H9.5V20H11.25V12.75H13V11.25Z"/>
+                            </svg>
+                            <span class="atom-label">TypeScript</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Projetos -->
+    <section id="projetos" class="section projetos">
+        <h2 class="section__titulo">Meus Projetos</h2>
+        <div class="projetos-grid">
+            <div class="projeto-card">
+                <img src="./assets/amigo.png" alt="Projeto Caixa do Amigo Secreto">
+                <h3>Caixa do Amigo Secreto</h3>
+                <p>App Caixa do Amigo Secreto é uma aplicação web projetada para modernizar a tradicional brincadeira de amigo secreto. Em vez de sortear nomes em papéis, a aplicação permite que cada participante insira seu nome e realize o sorteio digitalmente.</p>
+                <div class="projeto-links">
+                    <a href="https://github.com/rsprogrammerbr/app-amigo-secreto" class="btn-projeto" target="_blank">
+                        <i class="fab fa-github"></i>
+                        Código
+                    </a>
+                    <a href="https://app-caixa-do-amigo-secreto.vercel.app/" class="btn-projeto" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                        Demo
+                    </a>
+                </div>
+            </div>
+
+            <div class="projeto-card">
+                <img src="./assets/jogo.png" alt="Jogo do Número Secreto">
+                <h3>Jogo do Número Secreto</h3>
+                <p>Bem-vindo ao repositório do Jogo do Número Secreto! Este é um jogo interativo, simples e divertido, onde você deve adivinhar um número secreto escolhido aleatoriamente entre 1 e 80.</p>
+                <div class="projeto-links">
+                    <a href="https://github.com/rsprogrammerbr/game-secret-number" class="btn-projeto" target="_blank">
+                        <i class="fab fa-github"></i>
+                        Código
+                    </a>
+                    <a href="https://game-secret-number-zeta.vercel.app/" class="btn-projeto" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                        Demo
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="rodape">
+        <p>Desenvolvido por Rodrigo Silva</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./app.js"></script>
+</body>
+</html>
