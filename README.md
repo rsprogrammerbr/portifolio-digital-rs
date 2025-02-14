@@ -16,7 +16,7 @@ A ideia principal é proporcionar uma experiência fluida e moderna para visitan
 
 ✅ Página inicial com introdução sobre meu trabalho  
 ✅ Seção "Sobre Mim" destacando minha trajetória  
-✅ Links para redes sociais (GitHub e LinkedIn)
+✅ Links para redes sociais (GitHub e LinkedIn)  
 ✅ Layout responsivo para diversos dispositivos no estilo landing page 
 
 ## 🎨 Layout
